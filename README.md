@@ -1,17 +1,25 @@
 # ThinkPad T14 Hackintosh
 
-EFI de OpenCore para una Lenovo ThinkPad T14 Gen 1 (Intel) con macOS Sequoia 15.7.5, en arranque dual con Windows.
+EFI de OpenCore 1.0.7 para una Lenovo ThinkPad T14 Gen 1 (Intel) con macOS Sequoia 15.7.5, en arranque dual con Windows en el mismo disco.
 
 ## Equipo
 
 | Parte | Detalle |
 | --- | --- |
-| Procesador | Intel Core i7-10610U (Comet Lake) |
+| Modelo | Lenovo ThinkPad T14 Gen 1 (Intel) |
+| Procesador | Intel Core i7-10610U, 4 núcleos y 8 hilos (Comet Lake) |
 | Gráficos | Intel UHD Graphics 620 |
-| Pantalla | 1920 × 1080, táctil |
+| Pantalla | 14 pulgadas, 1920 × 1080, táctil (ELAN, por VoodooI2CHID) |
 | Memoria | 24 GB |
-| Audio | `alcid=86` |
-| Wi-Fi y Bluetooth | Intel (AirportItlwm, IntelBluetoothFirmware) |
+| Disco | Kingston NV2 de 1 TB (NVMe), mitad macOS y mitad Windows |
+| Audio | Realtek ALC257 (`alcid=86`) |
+| Ethernet | Intel I219-LM (IntelMausi) |
+| Wi-Fi y Bluetooth | Intel AX201 (AirportItlwm, IntelBluetoothFirmware) |
+| Trackpad y TrackPoint | Synaptics por SMBus (VoodooRMI) |
+| Teclado | Retroiluminado; teclas de función y luz con YogaSMC y BrightnessKeys |
+| Cámara | Integrada (Chicony, USB) |
+| Lector de tarjetas | Realtek (RealtekCardReader) |
+| Batería | Lectura de carga y ciclos con SMCBatteryManager |
 | SMBIOS | `MacBookPro16,2` |
 
 ## Qué incluye
